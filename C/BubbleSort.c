@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include "Sort.h"
 
 void swap(int* a, int* b){
     /*
@@ -14,17 +14,34 @@ void bubbleSort(int *arr, size_t length){
     /*
         Sorts an array of integers using the bubble sort algorithm
     */
-   
+
     int swapped;
 
     do{
+
         swapped = 0;
+
+        //Iterate through the array
         for(size_t i = 1; i < length; i++){
+
+            //If the previous element is greater than the current element, swap them
             if(arr[i-1] > arr[i]){
                 swap(&arr[i-1], &arr[i]);
                 swapped = 1;
             }
+
         }
     } while (swapped);
 
+}
+
+void bubbleSortTest(){
+    int arr[] = {5, 3, 2, 1, 4};
+
+    
+    bubbleSort(arr, sizeof(arr)/sizeof(arr[0]));  
+
+    for(size_t i = 0; i < sizeof(arr)/sizeof(arr[0]); i++){
+        printf("%d ", arr[i]);
+    }
 }
