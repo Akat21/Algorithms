@@ -5,7 +5,10 @@
 #include <stdlib.h>
 
 //Struct
-struct LinkedList;
+struct LinkedList{
+    int data;
+    struct LinkedList *next;
+};
 
 //Methods
 void push(struct LinkedList **head, int data);

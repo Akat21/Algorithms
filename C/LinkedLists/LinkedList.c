@@ -1,10 +1,5 @@
 #include "LinkedList.h"
 
-//
-struct LinkedList{
-    int data;
-    struct LinkedList *next;
-};
 
 void push(struct LinkedList** head, int data){
     /*
