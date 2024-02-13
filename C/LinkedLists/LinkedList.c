@@ -65,7 +65,9 @@ void pop(struct LinkedList **head){
     }
 
     //Free the last element and set the next of the second to last element to NULL
+    free(temp->next);
     temp->next = NULL;
+
 }
 
 struct LinkedList* search(struct LinkedList *head, int data){
@@ -122,4 +124,6 @@ void LinkedListTest(){
     //Print the list
     print(head);
 
+    //Free the memory
+    free(head);
 }
