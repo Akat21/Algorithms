@@ -36,11 +36,17 @@ void bubbleSort(int *arr, size_t length){
 }
 
 void bubbleSortTest(){
+    /*
+        Test the bubbleSort function
+    */
+
+    //Create an array
     int arr[] = {5, 3, 2, 1, 4};
 
-    
+    //Sort the array
     bubbleSort(arr, sizeof(arr)/sizeof(arr[0]));  
 
+    //Print the sorted array
     for(size_t i = 0; i < sizeof(arr)/sizeof(arr[0]); i++){
         printf("%d ", arr[i]);
     }
