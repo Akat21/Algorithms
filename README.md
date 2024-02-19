@@ -13,3 +13,4 @@ This repository contains implementations of various algorithms written in C and 
     - Linked List
     - Binary Search Tree (BST)
     - Self-balancing Binary Search Tree (AVL)
+    - Union Find
